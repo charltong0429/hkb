@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>DocCenter @Hypontech</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="Hypontech DocCenter" content="DocCenter">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="//unpkg.com/docsify/themes/vue.css">
+    <link rel="shortcut icon" href="img/favicon.ico">
+</head>
+
+<body>
+    <script>
+        console.log("既然已经看到这里了！"),
+            console.log("有没有兴趣来海鹏工作，一起快乐地玩耍呢？"),
+            console.log("向service@hypontech.com写一封邮件"),
+            console.log("主题注明Day Day Up"),
+            console.log("HR将优先处理你的简历！！")
+    </script>
+    <div id="app">Loading...</div>
+    <script>
+        window.$docsify = {
+            name: 'DocCenter',
+            loadSidebar: true,
+            topMergin: 5,
+            loadNavbar: true,
+            mergeNavbar: true,
+            coverpage: true,
+            onlyCover: false,
+            // AutoHeader功能
+            // autoHeader: true,
+            // 文档内目录设置
+            toc: {
+                tocMaxLevel: 3,
+                target: 'h1, h2, h3, h4, h5'
+            },
+            // tab功能
+            tabs: {
+                persist: true,
+                sync: true,
+                theme: 'classic'
+            },
+            formatUpdated: '{MM}/{DD} {HH}:{mm}',
+
+            formatUpdated: function (time) {
+                // ...
+
+                return time;
+            },
+            // 搜索功能
+            search: {
+                placeholder: {
+                    '/zh-cn/': '搜索',
+                    '/': 'Search'
+                },
+                noData: {
+                    '/zh-cn/': '找不到结果',
+                    '/': 'No Results'
+                },
+                paths: 'auto'
+            },
+            copyCode: {
+                buttonText: {
+                    '/zh-cn/': '点击复制',
+
+                    '/': 'Copy to clipboard'
+                },
+                errorText: {
+                    '/zh-cn/': '错误',
+                    '/': 'Error'
+                },
+                successText: {
+                    '/zh-cn/': '复制',
+                    '/': 'Copied'
+                }
+            },
+            // 返回顶部功能
+            scrollToTop: {
+                auto: true,
+                text: 'Top',
+                right: 150,
+                bottom: 85,
+                offset: 500
+            }
+        }
+    </script>
+
+    <script src="//unpkg.com/docsify"></script>
+    <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
+    <script src="//unpkg.com/docsify-copy-code"></script>
+    <script src="//cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/docsify-tabs@1"></script>
+    <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/emoji.min.js"></script>
+    <script src="//unpkg.com/docsify-plugin-toc"></script>
+    <script src="https://unpkg.com/docsify-plugin-flexible-alerts"></script>
+    <!-- <script src="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script> -->
+
+    <script src="//unpkg.com/docsify-fontawesome/dist/docsify-fontawesome.min.js"></script>
+    <link rel="stylesheet" href="css\font-awesome.css" />
+    <!-- <link rel="stylesheet" href="unpkg.com/@fortawesome/fontawesome-free/css/brands.css" />
+    <link rel="stylesheet" href="unpkg.com/@fortawesome/fontawesome-free/css/regular.css" />
+    <link rel="stylesheet" href="unpkg.com/@fortawesome/fontawesome-free/css/solid.css" /> -->
+
+    <script src="//unpkg.com/docsify-scroll-to-top/dist/docsify-scroll-to-top.min.js"></script>
+</body>
+
+</html>
